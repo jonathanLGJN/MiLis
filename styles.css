@@ -1,0 +1,203 @@
+html {
+    background-color: #b3d8f5;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+.box {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #008efa;
+    background-image: url(imagenes/WhatsApp_Image_2024-10-21_at_12.52.30.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.box_1, .box_2, .box_3 {
+    background-color: #b3d8f5;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    color: #1d5b8a;
+    box-sizing: border-box;
+}
+
+.box_1 h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.box_2 h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.box_4 {
+    background-color: #3c8ae859;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.box_3 p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px;
+}
+
+.box_3_1 {
+    padding: 10px;
+    background-color: #b3d8f5;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* Para que los vídeos se reorganicen en pantallas pequeñas */
+}
+
+.videos blockquote {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.dialogo {
+    background-position: center;
+    background-color: #b3d8f5;
+    margin: 20px;
+    padding: 40px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #1d5b8a;
+    font-size: 20px;
+}
+
+h2 {
+    color: #7577ff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.outro {
+    box-sizing: border-box;
+    background-color: #b3d8f5;
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #1d5b8a;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 80px;
+}
+
+.ultimacaja {
+    background-color: #b3d8f5;
+    box-sizing: border-box;
+    margin: 20px;
+    width: auto;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around; /* Acomoda las fotos con espacio entre ellas */
+    align-items: center; /* Centra verticalmente las fotos */
+    flex-direction: row; /* Asegura que estén en fila */
+    flex-wrap: wrap; /* Para que las imágenes se ajusten en pantallas pequeñas */
+}
+
+.Foto1, .Foto2, .Foto3, .Foto4, .Foto5, .Foto6 {
+    width: 100px; /* Tamaño pequeño de las imágenes */
+    height: 100px;
+    border-radius: 8px; /* Bordes redondeados, opcional */
+}
+
+/* Especifica la imagen de fondo para cada foto */
+.Foto1 {
+    background-image: url("imagenes/WhatsApp\ Image\ 2024-10-21\ at\ 19.01.06.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Foto2 {
+    background-image: url('imagenes/WhatsApp\ Image\ 2024-10-21\ at\ 19.01.07.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.Foto3 {
+    background-image: url('imagenes/WhatsApp\ Image\ 2024-10-21\ at\ 19.01.07\ \(4\).jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.Foto4 {
+    background-image: url('imagenes/WhatsApp\ Image\ 2024-10-21\ at\ 19.01.07\ \(6\).jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.Foto5 {
+    background-image: url('imagenes/WhatsApp\ Image\ 2024-10-21\ at\ 19.01.07\ \(5\).jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.Foto6 {
+    background-image: url("imagenes/WhatsApp\ Image\ 2024-10-21\ at\ 19.01.07\ \(7\).jpeg ");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .box {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .box_1 h1, .box_2 h2 {
+        font-size: 24px;
+    }
+
+    .box_3 p {
+        font-size: 18px;
+    }
+
+    .ultimacaja {
+        flex-direction: column; /* Cambia las fotos a una columna */
+        height: auto;
+    }
+
+    .Foto1, .Foto2, .Foto3, .Foto4, .Foto5, .Foto6 {
+        width: 80px; /* Reduce el tamaño de las imágenes */
+        height: 80px;
+        margin-bottom: 10px; /* Añade margen entre las fotos */
+    }
+
+    .videos {
+        flex-direction: column;
+    }
+
+    .videos blockquote {
+        width: 100%; /* Asegura que ocupen todo el ancho */
+        margin-bottom: 20px;
+    }
+
+    .outro {
+        padding: 40px;
+        font-size: 18px;
+    }
+}
